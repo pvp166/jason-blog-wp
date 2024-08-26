@@ -1,13 +1,14 @@
 <?php
+
+namespace Service;
+
 use Core\SuccessResponse;
-class AuthenticationController {
-    function login () {
-        // return new SuccessResponse();
-    }
-    function logout () {
-        
-    }
-    function signup () {
-        
-    }
+
+
+function login($request)
+{
+    $parameters = $request->get_json_params();
+    $username = $parameters['username'];
+    $password = $parameters['password'];
+    $remember_me = $parameters['remember'];
 }
