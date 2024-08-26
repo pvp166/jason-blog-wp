@@ -116,12 +116,11 @@ function handle_user_registration(WP_REST_Request $request)
     }
 
     return array(
-        'user_id' => $user_id,
-        'username' => $username,
-        'email' => $email,
+        'user' => $user,
 		'status' => 200,
     );
 }
+
 
 
 
